@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "nombre": "María García",
+    "email": "MARIA.GARCIA@EMAIL.COM",
+    "monto": 1500.50,
+    "estado": "activo"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos López",
+    "email": "carlos.lopez@email.com",
+    "monto": 2300.00,
+    "estado": "activo"
+  },
+  {
+    "id": 3,
+    "nombre": "Ana Martínez",
+    "email": "ANA.MARTINEZ@EMAIL.COM",
+    "monto": 875.25,
+    "estado": "inactivo"
+  },
+  {
+    "id": 4,
+    "nombre": "Pedro Sánchez",
+    "email": "pedro.sanchez@email.com",
+    "monto": 3200.75,
+    "estado": "activo"
+  },
+  {
+    "id": 5,
+    "nombre": "Laura Rodríguez",
+    "email": "LAURA.RODRIGUEZ@EMAIL.COM",
+    "monto": 450.00,
+    "estado": "activo"
+  },
+  {
+    "id": 6,
+    "nombre": "Miguel Torres",
+    "email": "miguel.torres@email.com",
+    "monto": 1890.30,
+    "estado": "inactivo"
+  },
+  {
+    "id": 7,
+    "nombre": "Sofía Hernández",
+    "email": "SOFIA.HERNANDEZ@EMAIL.COM",
+    "monto": 5600.00,
+    "estado": "activo"
+  },
+  {
+    "id": 8,
+    "nombre": "Diego Ramírez",
+    "email": "diego.ramirez@email.com",
+    "monto": 720.80,
+    "estado": "activo"
+  },
+  {
+    "id": 9,
+    "nombre": "Valentina Cruz",
+    "email": "VALENTINA.CRUZ@EMAIL.COM",
+    "monto": 4100.25,
+    "estado": "inactivo"
+  },
+  {
+    "id": 10,
+    "nombre": "Andrés Morales",
+    "email": "andres.morales@email.com",
+    "monto": 950.00,
+    "estado": "activo"
+  },
+  {
+    "id": 11,
+    "nombre": "Isabella Vargas",
+    "email": "ISABELLA.VARGAS@EMAIL.COM",
+    "monto": 2750.60,
+    "estado": "activo"
+  },
+  {
+    "id": 12,
+    "nombre": "Sebastián Reyes",
+    "email": "sebastian.reyes@email.com",
+    "monto": 1300.00,
+    "estado": "inactivo"
+  },
+  {
+    "id": 13,
+    "nombre": "Camila Ortiz",
+    "email": "CAMILA.ORTIZ@EMAIL.COM",
+    "monto": 3800.40,
+    "estado": "activo"
+  },
+  {
+    "id": 14,
+    "nombre": "Nicolás Silva",
+    "email": "nicolas.silva@email.com",
+    "monto": 600.00,
+    "estado": "activo"
+  },
+  {
+    "id": 15,
+    "nombre": "Luciana Mendoza",
+    "email": "LUCIANA.MENDOZA@EMAIL.COM",
+    "monto": 2100.90,
+    "estado": "inactivo"
+  }
+]
