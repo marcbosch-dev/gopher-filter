@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -18,7 +19,10 @@ type Usuario struct {
 func main() {
 	fmt.Println("=== Gopher-filter ===")
 
-	fmt.Println(os.Args[1])
+	if len(os.Args) != 2 {
+		fmt.Println("Error: You must provide a JSON file")
+		os.Exit(1)
+	}
 	file, err := os.Open(os.Args[1])
 	if err != nil {
 		fmt.Println("Error: Couldn't not read file ", os.Args[1])
@@ -28,7 +32,6 @@ func main() {
 
 	var usuarios []Usuario
 	decorder := json.NewDecoder(file)
-	// Decodofica para ver que todo esté bien
 	err = decorder.Decode(&usuarios)
 	if err != nil {
 		fmt.Println(err)
@@ -36,9 +39,36 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("Se leyeron %d registros\n", len(usuarios))
-	for _, u := range usuarios {
-		fmt.Printf("ID: %d, Nombre: %s, Email: %s, Monto: %.2f, Estado: %s\n",
-			u.Id, u.Nombre, u.Email, u.Monto, u.Estado)
+	scanner := bufio.NewScanner(os.Stdin)
+filter:
+	for {
+		showMenu()
+		if !scanner.Scan() {
+			fmt.Print("Error: could not read the Stdin")
+			break filter
+		}
+		option := scanner.Text()
+
+		if err := scanner.Err(); err != nil {
+			fmt.Println("Error: ", err)
+			break filter
+		}
+
+		switch option {
+		case "1":
+
+		case "6":
+			break filter
+		}
 	}
+}
+
+func showMenu() {
+	fmt.Println("Choise Atributte:")
+	fmt.Println("1. Id")
+	fmt.Println("2. Name")
+	fmt.Println("3. Email")
+	fmt.Println("4. Salary")
+	fmt.Println("5. State")
+	fmt.Println("6. Exit.")
 }
