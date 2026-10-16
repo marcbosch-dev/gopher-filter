@@ -1,9 +1,5 @@
 # gopher-filter
 
-Aquí tienes el enunciado de requerimientos (**Subject**) enfocado exclusivamente en el comportamiento esperado de la aplicación:
-
----
-
 ### Proyecto: Procesador y Transformador de Datos en Lote
 
 #### **Objetivo General**
